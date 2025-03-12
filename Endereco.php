@@ -5,14 +5,14 @@
         
         private int $codigo;
         private string $logradouro;
-        private string $numero;
+        private int $numero;
         private string $bairro;
         private string $cidade;
         private string $estado;
-        private string $cep;
+        private int $cep;
         private string $pais;
 
-        public function __construct(int $codigo, string $logradouro, string $numero, string $bairro, string $cidade, string $estado, string $cep, string $pais){
+        public function __construct(int $codigo, string $logradouro, int $numero, string $bairro, string $cidade, string $estado, int $cep, string $pais){
 
             $this->codigo = $codigo;
             $this->logradouro = $logradouro;
@@ -36,7 +36,7 @@
         $this->variavel = $dados;
     }//Fim do método
 
-    public function imprimir():string{
+    public function imprimir():mixed{
         return "<br>Código: ". $this->codigo.
                "<br>Logradouro: ". $this->logradouro.
                "<br>Numero: " . $this->numero.

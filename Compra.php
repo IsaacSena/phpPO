@@ -1,7 +1,7 @@
 <?php
     namespace PHP\Modelo;
   
-    class Veiculo{
+    class Compra{
         
         private int $codigo;
         private string $produtos;
