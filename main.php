@@ -1,56 +1,27 @@
-<?php 
-    namespace  PHP\Modelo;
-    require_once('Pessoa.php');//Chamar a classe
-    require_once('Cliente.php');
-    require_once('Funcionario.php');
-    require_once('Endereco.php');
-    require_once('Compra.php');
-    require_once('Veiculo.php');
-    require_once('Produto.php');
-    require_once('DAO/Conexao.php');
-    use PHP\MODELO\DAO\Conexao;
-    use PHP\Modelo\Pessoa;//Defina qual a classe
-    use PHP\Modelo\Cliente;
-    use PHP\Modelo\Funcionario;
-    use PHP\Modelo\Endereco;
-    use PHP\Modelo\Veiculo;
-    use PHP\Modelo\Compra;
-    use PHP\Modelo\Produto;
-    
 
-    $conexao = new Conexao();
-    $conexao->conectar();
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Página Principal</title>
+</head>
+<body>
 
 
 
-
-    /*
-    $endereco1 = new Endereco(1,'Avenida SenadorVergueiro',400,'Centro','São Bernado do campo','São Paulo','0129309','Brasil');
-
-    $cliente1 = new Cliente('123456789','Issac','1196501213',$endereco1,1500);
+<h1>Bem-Vindo</h1><br>
 
 
-    $veiculo1 = new Veiculo(1,'dwm100',$cliente1,'Vermelho','Civic',2024,'Honda');
-
-    
-    $produto1 = new Produto(1,'Automovel','3 metros','1 tonelada');
-    
-
-    $cliente2 = new Cliente('123123121','asdadsa','1231121313',$endereco1,780);
-    
-
-    $funcionario1 = new Funcionario('132131233','iassdas','123123',$endereco1,1320);
-
-    
-
-    echo "<br><br>".$cliente1->imprimir();
-    echo "<br><br>".$cliente2->imprimir();
-    echo "<br><br>".$funcionario1->imprimir();
-    echo "<br><br>".$endereco1->imprimir();
-    echo "<br><br>".$veiculo1->imprimir();
-    */
-    
-    
-
-
-?>
+        <form class = "form-control form-control-sm" style = "width;50%;margin-left> 25%;">
+        <button class="btn btn-primary"><a href ="Telas/CadastrarCliente.php">Cadastrar</button>
+        <button class="btn btn-primary"><a href ="Telas/ConsultarCliente.php">Consultar</button>
+        <button class="btn btn-primary"><a href ="Telas/AtualizarCliente.php">Atualizar</button>
+        <button class="btn btn-primary"><a href ="Telas/ExcluirCliente.php">Excluir</button>
+            
+       
+    </form>
+</body>
+</html>
